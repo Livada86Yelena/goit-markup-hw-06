@@ -1058,7 +1058,7 @@ ul {
   padding: 40px;
   min-width: 528px;
   min-height: 581px;
-  background-color: red;
+  background-color: #ffffff;
 
   top: 50%;
   left: 50%;
@@ -1161,57 +1161,58 @@ ul {
   transform: translateZ(-50px);
   fill: #212121;
 }
-.div-checkbox {
-  position: relative;
-  padding-top: 20px;
-  width: 100%;
+/* CHECKBOX */
+
+.form-policy {
+  display: flex;
+  align-items: center;
 }
-.checkbox {
+.form-policy {
+}
+.checkbox-form {
   display: flex;
   position: absolute;
   justify-content: center;
 
   border: #212121;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.bird {
+  align-items: center;
   width: 16px;
   height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 2px solid #212121;
 }
-.checkbox-form:hover {
-  color: var(--accent-color);
+.checkbox-form:checked + .bird {
+  background-color: var(--accent-color);
+  background-image: url('../images/SVG/icon-check-2.svg');
+  background-size: contain;
+  background-origin: border-box;
+  border-color: transparent;
 }
-.bird {
-  position: absolute;
-}
-.bird:hover {
-  color: var(--accent-color);
-}
-.form-policy {
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
 
-  color: #757575;
-}
-.contract {
+.contract-href {
   font-family: Roboto;
 
   font-size: 14px;
   line-height: 24px;
 
   letter-spacing: 0.03em;
-
   color: #757575;
 }
-.contract:hover {
-  color: var(--accent-color);
-}
+
 .modal-send {
-  position: absolute;
   display: block;
   align-items: center;
-  left: 50%;
-  transform: translate(-50%);
-  margin-top: 450px;
-  margin-bottom: 60px;
+  margin: auto;
 
   width: 200px;
   height: 50px;
