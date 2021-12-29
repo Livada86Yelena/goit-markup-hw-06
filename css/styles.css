@@ -903,7 +903,10 @@ ul {
   display: flex;
   align-items: baseline;
 }
-
+.letter {
+  padding-left: 16px;
+  color:  rgba(255, 255, 255, 0.6);;
+}
 /* Portfolio */
 .project-image {
   position: relative;
@@ -1055,10 +1058,11 @@ ul {
 }
 .modal {
   position: absolute;
-  padding: 40px;
+  padding: 40px 38px 40px 41px;
   min-width: 528px;
   min-height: 581px;
   background-color: #ffffff;
+  
 
   top: 50%;
   left: 50%;
@@ -1069,6 +1073,7 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 .x {
   fill: #000000;
 }
@@ -1090,9 +1095,7 @@ transition-duration: 250ms;
 }
 .close-modal:hover,
 .close-modal:focus {
-  border-color: var(--accent-color);
-outline-color: var(--accent-color);
-outline: 1px;
+  1px solid rgba(0, 0, 0, 0.1);
 }
 .close-modal .x:hover,
 .close-modal .x:focus {
@@ -1100,8 +1103,8 @@ outline: 1px;
 }
 /**/
 .modal-tittle {
-  margin: 0;
-  margin-bottom: 12px;
+padding-left: 4px;
+padding-bottom: 12px;
 
   font-family: Roboto;
   font-weight: 700;
@@ -1112,30 +1115,33 @@ outline: 1px;
 
   color: #212121;
 }
+
 .form-modal {
   display: flex;
   flex-direction: column;
+  margin-top:12px;
+  margin-left: 2px;
+ 
 }
 .form-label {
   position: relative;
   display: block;
-
+margin-bottom: 17px;
   width: 100%;
-
-  font-size: 12px;
-
+font-family: Roboto;
+font-size: 12px;
+line-height: 14px;
+line-height: 1.2em;
   letter-spacing: 0.01em;
   color: #757575;
 }
-.form-label + .form-label {
-  margin-top: 10px;
-}
+
 .input-form {
   display: block;
   height: 40px;
   width: 100%;
 
-  padding-top: 0px;
+  margin-top: 4px;
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 42px;
@@ -1159,8 +1165,9 @@ outline: 1px;
 .comment-field {
   display: block;
 
+margin-top: 4px;
   width: 100%;
-
+resize: none;
   font-family: Roboto;
   font-weight: normal;
   font-size: 14px;
@@ -1179,13 +1186,22 @@ outline: 1px;
 
 .icon-person {
   position: absolute;
-  top: 25px;
+  top: 30px;
   left: 12px;
 
   transform: translateZ(-50px);
   fill: #212121;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.policy-text {
+  font-family: Roboto;
+
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+
+color: #757575;
 }
 .comment-field:hover,
 .comment-field:focus {
@@ -1198,6 +1214,7 @@ outline: 1px;
 .form-policy {
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 
 .checkbox-form {

@@ -387,7 +387,7 @@
 </div>
     </footer>
 
-    <--modal window-->
+   
 
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
@@ -399,6 +399,7 @@
               <b class="modal-tittle">Оставьте свои данные, мы вам перезвоним</b>
             
                   <form class="form-modal">
+                      <div class="form-size">
                       <label class="form-label" for="name">
                           Имя
                           <input class="input-form" type="text" name="name" id="name" autocomplete="on" />
@@ -406,7 +407,7 @@
                               <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
                           </svg>
                         </label>
-
+</div>
                         <label class="form-label" for="tel">
                             Телефон                                          
                             <input class="input-form" type="tel" name="tel" id="tel" autocomplete="on" />
@@ -425,7 +426,7 @@
 
                             <label class="form-label" for="comment">
                             Комментарий
-                            <textarea 
+                            <textarea
                             class="comment-field" 
                             name="comment-field"
                             id="comment-field" 
@@ -437,7 +438,8 @@
                             <label class="form-policy" for="policy-checkbox">
                                 <input type="checkbox" class="checkbox-form" id="policy-checkbox">
                                 <span class="bird"></span>
-                                Соглашаюсь с рассылкой и принимаю
+                                <span class="policy-text">
+                                Соглашаюсь с рассылкой и принимаю</span>
                                 <a href="#" class="contract-href">Условия договора</a>                      
                         </label>
                 
